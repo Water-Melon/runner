@@ -55,7 +55,7 @@ Git uses various CA bundle file depends on your operation system.
 You can check where Git check CA file by running:
 ```bash
 export GIT_CURL_VERBOSE=1
-git ls-remote https://github.com/actions/runner HEAD
+git ls-remote https://github.com/Water-Melon/runner HEAD
 ```
 
 You should see something like:

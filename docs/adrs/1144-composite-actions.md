@@ -4,7 +4,7 @@
 
 ## Context
 
-We released [composite run steps](https://github.com/actions/runner/pull/554) last year which started our journey of reusing steps across different workflow files. To continue that journey, we want to expand composite run steps into composite actions.
+We released [composite run steps](https://github.com/Water-Melon/runner/pull/554) last year which started our journey of reusing steps across different workflow files. To continue that journey, we want to expand composite run steps into composite actions.
 
 We want to support the `uses` steps from workflows in composite actions, including:
   - Container actions

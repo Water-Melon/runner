@@ -23,7 +23,7 @@ export RUNNER_CFG_PAT=yourPAT
 
 Run as a one-liner. NOTE: replace with yourorg/yourrepo (repo level) or just yourorg (org level)
 ```bash
-curl -s https://raw.githubusercontent.com/actions/runner/main/scripts/create-latest-svc.sh | bash -s yourorg/yourrepo
+curl -s https://raw.githubusercontent.com/Water-Melon/runner/main/scripts/create-latest-svc.sh | bash -s yourorg/yourrepo
 ```
 
 You can call the script with additional arguments:
@@ -41,7 +41,7 @@ You can call the script with additional arguments:
 Use `--` to pass any number of optional named parameters:
 
 ```
-curl -s https://raw.githubusercontent.com/actions/runner/main/scripts/create-latest-svc.sh | bash -s -- -s myorg/myrepo -n myname -l label1,label2
+curl -s https://raw.githubusercontent.com/Water-Melon/runner/main/scripts/create-latest-svc.sh | bash -s -- -s myorg/myrepo -n myname -l label1,label2
 ```
 ### Why can't I use a container?
 
@@ -59,7 +59,7 @@ The runner is installed as a service using `systemd` and `systemctl`. Docker doe
 
 Repo level one liner.  NOTE: replace with yourorg/yourrepo (repo level) or just yourorg (org level)
 ```bash
-curl -s https://raw.githubusercontent.com/actions/runner/main/scripts/remove-svc.sh | bash -s yourorg/yourrepo
+curl -s https://raw.githubusercontent.com/Water-Melon/runner/main/scripts/remove-svc.sh | bash -s yourorg/yourrepo
 ```
 
 ### Delete an offline runner
@@ -74,5 +74,5 @@ curl -s https://raw.githubusercontent.com/actions/runner/main/scripts/remove-svc
 
 Repo level one-liner.  NOTE: replace with yourorg/yourrepo (repo level) or just yourorg (org level) and replace runnername
 ```bash
-curl -s https://raw.githubusercontent.com/actions/runner/main/scripts/delete.sh | bash -s yourorg/yourrepo runnername
+curl -s https://raw.githubusercontent.com/Water-Melon/runner/main/scripts/delete.sh | bash -s yourorg/yourrepo runnername
 ```

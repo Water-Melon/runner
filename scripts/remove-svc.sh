@@ -57,7 +57,7 @@ if [[ "$runner_scope" == *\/* ]]; then
     base_api_url="https://api.github.com/repos"
 fi
 
-export REMOVE_TOKEN=$(curl -s -X POST ${base_api_url}/${runner_scope}/actions/runners/remove-token -H "accept: application/vnd.github.everest-preview+json" -H "authorization: token ${RUNNER_CFG_PAT}" | jq -r '.token')
+export REMOVE_TOKEN=$(curl -s -X POST ${base_api_url}/${runner_scope}/Water-Melon/runners/remove-token -H "accept: application/vnd.github.everest-preview+json" -H "authorization: token ${RUNNER_CFG_PAT}" | jq -r '.token')
 
 if [ -z "$REMOVE_TOKEN" ]; then fatal "Failed to get a token"; fi 
 

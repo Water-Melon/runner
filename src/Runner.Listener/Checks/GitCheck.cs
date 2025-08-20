@@ -22,7 +22,7 @@ namespace GitHub.Runner.Listener.Check
 
         public string CheckLog => _logFile;
 
-        public string HelpLink => "https://github.com/actions/runner/blob/main/docs/checks/git.md";
+        public string HelpLink => "https://github.com/Water-Melon/runner/blob/main/docs/checks/git.md";
 
         public Type ExtensionType => typeof(ICheckExtension);
 

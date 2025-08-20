@@ -7,9 +7,9 @@
 
 Since configuring self-hosted runners is commonly automated via scripts, the labels need to be able to be created during configuration.  The runner currently registers the built-in labels (os, arch) during registration but does not accept labels via command line args to extend the set registered.
 
-See Issue: https://github.com/actions/runner/issues/262
+See Issue: https://github.com/Water-Melon/runner/issues/262
 
-This is another version of [ADR275](https://github.com/actions/runner/pull/275)
+This is another version of [ADR275](https://github.com/Water-Melon/runner/pull/275)
 
 ## Decision
 

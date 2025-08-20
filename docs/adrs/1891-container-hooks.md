@@ -6,7 +6,7 @@
 
 # Background
 
-[Job Hooks](https://github.com/actions/runner/blob/main/docs/adrs/1751-runner-job-hooks.md) have given users the ability to customize how their self hosted runners run a job.
+[Job Hooks](https://github.com/Water-Melon/runner/blob/main/docs/adrs/1751-runner-job-hooks.md) have given users the ability to customize how their self hosted runners run a job.
 Users also want the ability to customize how they run containers during the scope of the job, rather then being locked into the docker implementation we have in the runner. They may want to use podman, kubernetes, or even change the docker commands we run. 
 We should give them that option, and publish examples how how they can create their own hooks.
 
@@ -20,7 +20,7 @@ We should give them that option, and publish examples how how they can create th
   - There is no partial opt in, you must handle every hook 
 - We will pass a command and some args via `stdin`
 - An exit code of 0 is a success, every other exit code is a failure
-- We will support the same runner commands we support in [Job Hooks](https://github.com/actions/runner/blob/main/docs/adrs/1751-runner-job-hooks.md)
+- We will support the same runner commands we support in [Job Hooks](https://github.com/Water-Melon/runner/blob/main/docs/adrs/1751-runner-job-hooks.md)
 - On timeout, we will send a sigint to your process. If you fail to terminate within a reasonable amount of time, we will send a sigkill, and eventually kill the process tree.
 
 An example input looks like

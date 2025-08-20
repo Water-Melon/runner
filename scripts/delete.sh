@@ -50,7 +50,7 @@ fi
 #--------------------------------------
 # Ensure offline
 #--------------------------------------
-runner_status=$(curl -s -X GET ${base_api_url}/${runner_scope}/actions/runners?per_page=100  -H "accept: application/vnd.github.everest-preview+json" -H "authorization: token ${RUNNER_CFG_PAT}" \
+runner_status=$(curl -s -X GET ${base_api_url}/${runner_scope}/Water-Melon/runners?per_page=100  -H "accept: application/vnd.github.everest-preview+json" -H "authorization: token ${RUNNER_CFG_PAT}" \
         | jq -M -j ".runners | .[] | select(.name == \"${runner_name}\") | .status")
 
 if [ -z "${runner_status}" ]; then 
@@ -66,7 +66,7 @@ fi
 #--------------------------------------
 # Get id of runner to remove
 #--------------------------------------
-runner_id=$(curl -s -X GET ${base_api_url}/${runner_scope}/actions/runners?per_page=100  -H "accept: application/vnd.github.everest-preview+json" -H "authorization: token ${RUNNER_CFG_PAT}" \
+runner_id=$(curl -s -X GET ${base_api_url}/${runner_scope}/Water-Melon/runners?per_page=100  -H "accept: application/vnd.github.everest-preview+json" -H "authorization: token ${RUNNER_CFG_PAT}" \
         | jq -M -j ".runners | .[] | select(.name == \"${runner_name}\") | .id")
 
 if [ -z "${runner_id}" ]; then 
@@ -78,6 +78,6 @@ echo "Removing id ${runner_id}"
 #--------------------------------------
 # Remove the runner
 #--------------------------------------
-curl -s -X DELETE ${base_api_url}/${runner_scope}/actions/runners/${runner_id} -H "authorization: token ${RUNNER_CFG_PAT}"
+curl -s -X DELETE ${base_api_url}/${runner_scope}/Water-Melon/runners/${runner_id} -H "authorization: token ${RUNNER_CFG_PAT}"
 
 echo "Done."

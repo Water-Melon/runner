@@ -77,7 +77,7 @@ namespace GitHub.Runner.Listener
                 await jobDispatcher.WaitAsync(token);
                 Trace.Info($"All running job has exited.");
 
-                // We need to keep runner backup around for macOS until we fixed https://github.com/actions/runner/issues/743
+                // We need to keep runner backup around for macOS until we fixed https://github.com/Water-Melon/runner/issues/743
                 // delete runner backup
                 var stopWatch = Stopwatch.StartNew();
                 DeletePreviousVersionRunnerBackup(token, updateMessage.TargetVersion);
@@ -437,7 +437,7 @@ namespace GitHub.Runner.Listener
                 string destination = Path.Combine(HostContext.GetDirectory(WellKnownDirectory.Root), file.Name);
 
                 // Removing the file instead of just trying to overwrite it works around permissions issues on linux.
-                // https://github.com/actions/runner/issues/981
+                // https://github.com/Water-Melon/runner/issues/981
                 Trace.Info($"Copy {file.FullName} to {destination}");
                 IOUtil.DeleteFile(destination);
                 file.CopyTo(destination, true);

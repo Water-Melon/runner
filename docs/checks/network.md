@@ -31,7 +31,7 @@ Use a 3rd party tool to make the same requests as the runner did would be a good
 
 If the 3rd party tool is also experiencing the same error as the runner does, then you might want to contact your network administrator for help.
 
-Otherwise, contact GitHub customer support or log an issue at https://github.com/actions/runner
+Otherwise, contact GitHub customer support or log an issue at https://github.com/Water-Melon/runner
 
 ### Troubleshooting: Why can't I configure a runner?
 

@@ -2,13 +2,13 @@
 
 ## Context
 
-This ADR details the design changes for supporting custom configurable hooks for on various runner events. This has been a long requested user feature [here](https://github.com/actions/runner/issues/1543), [here](https://github.com/actions/runner/issues/699) and [here](https://github.com/actions/runner/issues/1116) for users to have more information on runner observability, and for the ability to run cleanup and teardown jobs. 
+This ADR details the design changes for supporting custom configurable hooks for on various runner events. This has been a long requested user feature [here](https://github.com/Water-Melon/runner/issues/1543), [here](https://github.com/Water-Melon/runner/issues/699) and [here](https://github.com/Water-Melon/runner/issues/1116) for users to have more information on runner observability, and for the ability to run cleanup and teardown jobs. 
 
 This feature is mainly intended for self hosted runner administrators.
 
 **What we hope to solve with this feature**
 1. A runner admininstrator is able to add custom scripts to cleanup their runner environment at the start or end of a job
-2. A runner admininstrator is able to add custom scripts to help setup their runner environment at the beginning of a job, for reasons like [caching](https://github.com/actions/runner/issues/1543#issuecomment-1050346279)
+2. A runner admininstrator is able to add custom scripts to help setup their runner environment at the beginning of a job, for reasons like [caching](https://github.com/Water-Melon/runner/issues/1543#issuecomment-1050346279)
 3. A runner administrator is able to grab custom telemetry of jobs running on their self hosted runner
 
 **What we don't think this will solve**

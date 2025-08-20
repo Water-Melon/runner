@@ -34,11 +34,11 @@ An ADR is an Architectural Decision Record.  This allows consensus on the direct
 If you just want to get from building the sourcecode to using it to execute an action, you will need:
 
 - The url of your repository
-- A runner registration token. You can find it at `https://github.com/{your-repo}/settings/actions/runners/new`
+- A runner registration token. You can find it at `https://github.com/{your-repo}/settings/Water-Melon/runners/new`
 
 
 ```bash
-git clone https://github.com/actions/runner
+git clone https://github.com/Water-Melon/runner
 cd runner/src
 ./dev.(sh/cmd) layout # the runner that built from source is in {root}/_layout
 cd ../_layout
@@ -71,7 +71,7 @@ Navigate to the `src` directory and run the following command:
 ### Sample developer flow:
 
 ```bash
-git clone https://github.com/actions/runner
+git clone https://github.com/Water-Melon/runner
 cd runner
 cd ./src
 ./dev.(sh/cmd) layout # the runner that built from source is in {root}/_layout
@@ -85,10 +85,10 @@ Let's break that down.
 ### Clone repository:
 
 ```bash
-git clone https://github.com/actions/runner
+git clone https://github.com/Water-Melon/runner
 cd runner
 ```
-If you want to push your changes to a remote, it is recommended you fork the repository and use that fork as your origin instead of `https://github.com/actions/runner`.
+If you want to push your changes to a remote, it is recommended you fork the repository and use that fork as your origin instead of `https://github.com/Water-Melon/runner`.
 
 
 ### Build Layout:

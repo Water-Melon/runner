@@ -124,7 +124,7 @@ fi
 attemptedtargetedfix=0
 currentplatform=$(uname | awk '{print tolower($0)}')
 if [[ "$currentplatform" == 'darwin'  && $restartinteractiverunner -eq 0 ]]; then
-    # We needed a fix for https://github.com/actions/runner/issues/743
+    # We needed a fix for https://github.com/Water-Melon/runner/issues/743
     # We will recreate the ./externals/nodeXY/bin/node of the past runner version that launched the runnerlistener service
     # Otherwise mac gatekeeper kills the processes we spawn on creation as we are running a process with no backing file
 

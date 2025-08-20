@@ -6,7 +6,7 @@
 
 ## Context
 
-Customers want to be able to compose actions from actions (ex: https://github.com/actions/runner/issues/438)
+Customers want to be able to compose actions from actions (ex: https://github.com/Water-Melon/runner/issues/438)
 
 An important step towards meeting this goal is to build functionality for actions where users can simply execute any number of steps. 
 

@@ -7,7 +7,7 @@
 ## Context
 
 We recently shipped composite actions, which allows you to reuse individual steps inside an action. 
-However, one of the [most requested features](https://github.com/actions/runner/issues/834) has been a way to support the `if` keyword.
+However, one of the [most requested features](https://github.com/Water-Melon/runner/issues/834) has been a way to support the `if` keyword.
 
 ### Goals
 - We want to keep consistent with current behavior

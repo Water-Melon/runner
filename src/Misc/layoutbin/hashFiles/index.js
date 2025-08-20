@@ -1101,7 +1101,7 @@ exports.toCommandValue = toCommandValue;
  *
  * @param annotationProperties
  * @returns The command properties to send with the actual annotation command
- * See IssueCommandProperties: https://github.com/actions/runner/blob/main/src/Runner.Worker/ActionCommandManager.cs#L646
+ * See IssueCommandProperties: https://github.com/Water-Melon/runner/blob/main/src/Runner.Worker/ActionCommandManager.cs#L646
  */
 function toCommandProperties(annotationProperties) {
     if (!Object.keys(annotationProperties).length) {

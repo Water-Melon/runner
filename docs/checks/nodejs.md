@@ -27,4 +27,4 @@ All javascript base Actions will get executed by the built-in `node` at either `
   
 ## Still not working?
 
-Contact GitHub customer service or log an issue at https://github.com/actions/runner if you think it's a runner issue.
+Contact GitHub customer service or log an issue at https://github.com/Water-Melon/runner if you think it's a runner issue.

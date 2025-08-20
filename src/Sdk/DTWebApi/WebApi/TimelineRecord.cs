@@ -324,7 +324,7 @@ namespace GitHub.DistributedTask.WebApi
         /// </summary>
         private void EnsureInitialized()
         {
-            // Note that ?? is a short-circuiting operator.  (??= would be preferable, but it's not supported in the .NET Framework version currently used by actions/runner.)
+            // Note that ?? is a short-circuiting operator.  (??= would be preferable, but it's not supported in the .NET Framework version currently used by Water-Melon/runner.)
 
             // De-nullify the following historically-nullable ints.
             // (After several weeks in production, it may be possible to eliminate these nullable backing fields.)

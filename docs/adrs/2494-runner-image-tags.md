@@ -8,7 +8,7 @@
 
 Following the [adoption of actions-runner-controller by GitHub](https://github.com/actions/actions-runner-controller/discussions/2072) and the introduction of the new runner scale set autoscaling mode, we needed to provide a basic runner image that could be used off the shelf without much friction.
 
-The [current runner image](https://github.com/actions/runner/pkgs/container/actions-runner) is published to GHCR. Each release of this image is tagged with the runner version and the most recent release is also tagged with `latest`.
+The [current runner image](https://github.com/Water-Melon/runner/pkgs/container/actions-runner) is published to GHCR. Each release of this image is tagged with the runner version and the most recent release is also tagged with `latest`.
 
 While the use of `latest` is common practice, we recommend that users pin a specific version of the runner image for a predictable runtime and improved security posture. However, we still notice that a large number of end users are relying on the `latest` tag & raising issues when they encounter problems.
 

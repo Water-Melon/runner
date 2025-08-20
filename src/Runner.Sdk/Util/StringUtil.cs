@@ -124,7 +124,7 @@ namespace GitHub.Runner.Sdk
             return value?.Substring(0, Math.Min(value.Length, count));
         }
 
-        // Fixes format violations e.g. https://github.com/actions/runner/issues/2165
+        // Fixes format violations e.g. https://github.com/Water-Melon/runner/issues/2165
         public static string SanitizeUserAgentHeader(string header)
         {
             return header.Replace("(", "[").Replace(")", "]").Trim();

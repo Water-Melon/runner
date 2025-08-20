@@ -726,11 +726,11 @@ namespace GitHub.Runner.Listener.Configuration
                 // org runner
                 if (UrlUtil.IsHostedServer(gitHubUrlBuilder))
                 {
-                    githubApiUrl = $"{gitHubUrlBuilder.Scheme}://api.{gitHubUrlBuilder.Host}/orgs/{path[0]}/actions/runners/{tokenType}-token";
+                    githubApiUrl = $"{gitHubUrlBuilder.Scheme}://api.{gitHubUrlBuilder.Host}/orgs/{path[0]}/Water-Melon/runners/{tokenType}-token";
                 }
                 else
                 {
-                    githubApiUrl = $"{gitHubUrlBuilder.Scheme}://{gitHubUrlBuilder.Host}/api/v3/orgs/{path[0]}/actions/runners/{tokenType}-token";
+                    githubApiUrl = $"{gitHubUrlBuilder.Scheme}://{gitHubUrlBuilder.Host}/api/v3/orgs/{path[0]}/Water-Melon/runners/{tokenType}-token";
                 }
             }
             else if (path.Length == 2)
@@ -744,11 +744,11 @@ namespace GitHub.Runner.Listener.Configuration
 
                 if (UrlUtil.IsHostedServer(gitHubUrlBuilder))
                 {
-                    githubApiUrl = $"{gitHubUrlBuilder.Scheme}://api.{gitHubUrlBuilder.Host}/{repoScope}{path[0]}/{path[1]}/actions/runners/{tokenType}-token";
+                    githubApiUrl = $"{gitHubUrlBuilder.Scheme}://api.{gitHubUrlBuilder.Host}/{repoScope}{path[0]}/{path[1]}/Water-Melon/runners/{tokenType}-token";
                 }
                 else
                 {
-                    githubApiUrl = $"{gitHubUrlBuilder.Scheme}://{gitHubUrlBuilder.Host}/api/v3/{repoScope}{path[0]}/{path[1]}/actions/runners/{tokenType}-token";
+                    githubApiUrl = $"{gitHubUrlBuilder.Scheme}://{gitHubUrlBuilder.Host}/api/v3/{repoScope}{path[0]}/{path[1]}/Water-Melon/runners/{tokenType}-token";
                 }
             }
             else
@@ -809,11 +809,11 @@ namespace GitHub.Runner.Listener.Configuration
             var gitHubUrlBuilder = new UriBuilder(githubUrl);
             if (UrlUtil.IsHostedServer(gitHubUrlBuilder))
             {
-                githubApiUrl = $"{gitHubUrlBuilder.Scheme}://api.{gitHubUrlBuilder.Host}/actions/runner-registration";
+                githubApiUrl = $"{gitHubUrlBuilder.Scheme}://api.{gitHubUrlBuilder.Host}/Water-Melon/runner-registration";
             }
             else
             {
-                githubApiUrl = $"{gitHubUrlBuilder.Scheme}://{gitHubUrlBuilder.Host}/api/v3/actions/runner-registration";
+                githubApiUrl = $"{gitHubUrlBuilder.Scheme}://{gitHubUrlBuilder.Host}/api/v3/Water-Melon/runner-registration";
             }
 
             int retryCount = 0;

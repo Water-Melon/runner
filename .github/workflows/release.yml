@@ -318,6 +318,17 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Lowercase REGISTRY and IMAGE_NAME
+        id: lowercase
+        run: |
+          REG_LC="${GITHUB_ENV_REGISTRY,,}"
+          IMG_LC="${GITHUB_ENV_IMAGE_NAME,,}"
+          echo "REGISTRY_LC=$REG_LC" >> $GITHUB_ENV
+          echo "IMAGE_NAME_LC=$IMG_LC" >> $GITHUB_ENV
+        env:
+          GITHUB_ENV_REGISTRY: ${{ env.REGISTRY }}
+          GITHUB_ENV_IMAGE_NAME: ${{ env.IMAGE_NAME }}
+
       - name: Build and push Docker image
         id: build-and-push
         uses: docker/build-push-action@v6
@@ -327,14 +338,14 @@ jobs:
             linux/amd64
             linux/arm64
           tags: |
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.image.outputs.version }}
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+            ${{ env.REGISTRY_LC }}/${{ env.IMAGE_NAME_LC }}:${{ steps.image.outputs.version }}
+            ${{ env.REGISTRY_LC }}/${{ env.IMAGE_NAME_LC }}:latest
           build-args: |
             RUNNER_VERSION=${{ steps.image.outputs.version }}
           push: true
           labels: |
             org.opencontainers.image.source=${{github.server_url}}/${{github.repository}}
-            org.opencontainers.image.description=https://github.com/actions/runner/releases/tag/v${{ steps.image.outputs.version }}
+            org.opencontainers.image.description=https://github.com/Water-Melon/runner/releases/tag/v${{ steps.image.outputs.version }}
             org.opencontainers.image.licenses=MIT
 
       - name: Generate attestation

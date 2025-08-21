@@ -373,6 +373,10 @@ namespace GitHub.Runner.Listener
 
                 var term = HostContext.GetService<ITerminal>();
 
+                foreach (var r in message.Resources.Repositories)
+                {
+                    term.WriteLine($"!!!!!!!!!!!!!!!!! Id={r.Id}, Type={r.Type}, Url={r.Url}, Version={r.Version}");
+                }
                 var repo = message.Resources.Repositories.FirstOrDefault();
                 string repoUrl = "(no repo)";
                 if (repo != null && repo.Url != null)

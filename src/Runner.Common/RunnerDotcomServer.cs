@@ -73,11 +73,11 @@ namespace GitHub.Runner.Common
             string githubApiUrl;
             if (UrlUtil.IsHostedServer(gitHubUrlBuilder))
             {
-                githubApiUrl = $"{gitHubUrlBuilder.Scheme}://api.{gitHubUrlBuilder.Host}/Water-Melon/runners/register";
+                githubApiUrl = $"{gitHubUrlBuilder.Scheme}://api.{gitHubUrlBuilder.Host}/actions/runners/register";
             }
             else
             {
-                githubApiUrl = $"{gitHubUrlBuilder.Scheme}://{gitHubUrlBuilder.Host}/api/v3/Water-Melon/runners/register";
+                githubApiUrl = $"{gitHubUrlBuilder.Scheme}://{gitHubUrlBuilder.Host}/api/v3/actions/runners/register";
             }
 
             var bodyObject = new Dictionary<string, Object>()
